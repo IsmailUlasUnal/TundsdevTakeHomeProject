@@ -11,7 +11,13 @@ import SwiftUI
 struct TundsdevTakeHomeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                PeopleView()
+                    .tabItem {
+                        Symbols.person
+                        Text("Home")
+                    }
+            }
         }
     }
 }
